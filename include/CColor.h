@@ -14,5 +14,12 @@
     typedef enum position {FG, BG}position;
 
     int print_color(char * format, ...);
+    static inline void CLEAR_FORMAT() {printf("\e[%dm", RESET);}
+    static inline void NCLEAR_FORMAT() {printf("\e[%dm\n", RESET);}
+    static inline void BIU(sequences biu) {printf("\e[%dm", biu);}
+    static inline void COLOR(colors color) {printf("\e[%dm", color);}
+    static inline void RGB(unsigned char r, unsigned char g, unsigned char b) {printf("\e[38;2;%d;%d;%dm", r, g, b);}
+    static inline void BG_RGB(unsigned char r, unsigned char g, unsigned char b) {printf("\e[48;2;%d;%d;%dm", r, g, b);}
+    static inline void BG_COLOR(bg_colors bg_color) {printf("\e[%dm", bg_color);}
 
 #endif

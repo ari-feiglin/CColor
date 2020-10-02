@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/CColor.h
+stdio.h
+-
+stdlib.h
+-
+stdarg.h
+-
+string.h
+-
+
+/home/ari/git_repositories/CColor/src/CColor.c
+CColor.h
+/home/ari/git_repositories/CColor/src/CColor.h
+

@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC   -shared -Wl,-soname,libccolor.so -o libccolor.so CMakeFiles/ccolor.dir/src/CColor.c.o 
