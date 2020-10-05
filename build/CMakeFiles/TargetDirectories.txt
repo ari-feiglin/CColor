@@ -1,3 +1,0 @@
-/home/ari/git_repositories/CColor/build/CMakeFiles/rebuild_cache.dir
-/home/ari/git_repositories/CColor/build/CMakeFiles/ccolor.dir
-/home/ari/git_repositories/CColor/build/CMakeFiles/edit_cache.dir
