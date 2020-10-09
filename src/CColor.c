@@ -28,8 +28,8 @@ int print_color(char * format, ...){
         else if(format[i] == rgbformatter){
             place = va_arg(ap, int);
             r = va_arg(ap, int);
-            b = va_arg(ap, int);
             g = va_arg(ap, int);
+            b = va_arg(ap, int);
             
             switch(place){
             case FG: bytes_printed += printf("\e[38;2;%d;%d;%dm", r, g, b); break;
